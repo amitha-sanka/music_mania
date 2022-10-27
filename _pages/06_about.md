@@ -3,6 +3,9 @@ layout: page
 title: About
 permalink: /about/
 ---
+
+Write a quick descrition of music mania
+
 This site is built with [fastpages](https://github.com/fastai/fastpages)
 
 ## Key Links
