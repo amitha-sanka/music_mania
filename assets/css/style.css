@@ -427,7 +427,7 @@ pre code { font-size: 15px !important; }
 
 html, body, input, textarea, select, button { color: #D6CCC2 !important; background-color: #F5EBE0 !important; }
 
-a { color: #c64949 !important; }
+a { color: black !important; }
 
 a:hover { color: #D6CCC2 !important; }
 
