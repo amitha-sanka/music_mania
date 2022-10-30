@@ -3,35 +3,39 @@ layout: home
 image: images/logo.png
 ---
 <html>
-<body>
-<script> function test() { alert('hi');} </script>
-<button type = "button" onclick = "test();"></button>
-</body>
-</html>
-
-<html>
-<style type="text/css">
-    #submit {
-     background-color: #d2a86c;
-     padding: .5em;
-     -moz-border-radius: 5px;
-     -webkit-border-radius: 5px;
-     border-radius: 6px;
-     color: #fff;
-     font-family: 'Oswald';
-     font-size: 20px;
-     text-decoration: none;
-     border: none;
-    }
-    #submit:hover {
-     border: none;
-     background: orange;
-     box-shadow: 0px 0px 1px #777;
-    }
+      
+<head>
+    <title>
+        Create an HTML button that
+        acts like a link
+    </title>
+      
+    <!-- Style to create button -->
+    <style>
+        .gfg {
+        background-color: rgb(217, 167, 86);
+        border: 2px solid rgb(255, 255, 255);
+        color: rgb(103, 97, 66);
+        padding: 5px 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        margin: 10px 30px;
+        cursor: pointer;
+        }
     </style>
-<button id="submit">Example Button</button>
-
+</head>
+  
+<body>
+    <h1>Music Mania</h1>
+      
+    <!-- Create a form then add button
+        inside the form -->
+    <form action="https://amitha-sanka.github.io/music_mania/about/">
+        <button class = "gfg" type="submit">
+            Discover
+        </button>
+    </form>
+</body>
+  
 </html>
-
-
-
