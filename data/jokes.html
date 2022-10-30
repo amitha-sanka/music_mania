@@ -132,6 +132,7 @@ window.onload = wrap_img;
           error('GET API response failure: ' + response.status);
           return;
       }
+
       // valid response will have JSON data
       response.json().then(data => {
           console.log(data);
@@ -141,7 +142,7 @@ window.onload = wrap_img;
             
             // td for joke cell
             const joke = document.createElement("td");
-              joke.innerHTML = row.id + ". " + row.joke;  // add fetched data to innerHTML
+              joke.innerHTML = "Hello"//row.id + ". " + row.joke;  // add fetched data to innerHTML
 
             // td for haha cell with onclick actions
             const haha = document.createElement("td");
