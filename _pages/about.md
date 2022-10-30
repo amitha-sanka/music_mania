@@ -4,15 +4,5 @@ title: About
 permalink: /about/
 ---
 
-Write a quick descrition of music mania
-
-This site is built with [fastpages](https://github.com/fastai/fastpages)
-
-## Key Links
-- GitHub Repos:  <a href="https://github.com/nighthawkcoders">github.com/nighthawkcoders</a>
-- AWS Deployments: <a href="https://csa.nighthawkcodingsociety.com/">csp.nighthawkcodingsociety.com</a>
-- Slack: <a href="https://join.slack.com/t/cs-p-hq/shared_invite/zt-1ejp2nekj-vIeGHTAKR13E~648nh2NRg">Join Link</a>
-- 2021-2022 Archives: <a href="https://padlet.com/jmortensen7/csp2022tri1">Fall</a>, <a href="https://padlet.com/jmortensen7/csp2022tri2">Early Winter</a>, <a href="https://cspcoders.nighthawkcodingsociety.com/">Late Winter, Spring</a>
-
-
-![QR Code]({{site.baseurl}}/images/bit.ly_3T1z0jA.png)
+An easy and convenient way to find your favorite artists. Discover their albums and songs here!
+![logo](https://cdn.discordapp.com/attachments/702253958688800840/1036348164011208774/music_mania_record_player_logo-2.png)
