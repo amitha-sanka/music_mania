@@ -28,6 +28,17 @@
 
   
       ,"page2": {
+          "title": "Discover",
+          "content": "call backend function here | .",
+          "url": "https://nighthawkcoders.github.io/music_mania/discover/",
+          "relUrl": "/discover/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page3": {
           "title": "",
           "content": "Create an HTML button that acts like a link . Music Mania . Discover .",
           "url": "https://nighthawkcoders.github.io/music_mania/",
@@ -57,7 +68,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://nighthawkcoders.github.io/music_mania/robots.txt",
