@@ -28,17 +28,6 @@
 
   
       ,"page2": {
-          "title": "About",
-          "content": "An easy and convenient way to find your favorite artists. Discover their albums and songs here! . .",
-          "url": "https://nighthawkcoders.github.io/music_mania/about/",
-          "relUrl": "/about/",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page3": {
           "title": "Discover",
           "content": "call backend function here | .",
           "url": "https://nighthawkcoders.github.io/music_mania/discover/",
@@ -49,7 +38,7 @@
   
 
   
-      ,"page4": {
+      ,"page3": {
           "title": "",
           "content": "Create an HTML button that acts like a link . Music Mania . Discover . Create an HTML button that acts like a link . . Trending .",
           "url": "https://nighthawkcoders.github.io/music_mania/",
@@ -79,7 +68,7 @@
   
 
   
-      ,"page12": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://nighthawkcoders.github.io/music_mania/robots.txt",
