@@ -40,7 +40,7 @@
   
       ,"page3": {
           "title": "",
-          "content": ". . . . . . Create an HTML button that acts like a link . . Discover &lt;/html&gt; . Create an HTML button that acts like a link . . Trending .",
+          "content": ". . &lt;/body&gt; . Create an HTML button that acts like a link . . Discover &lt;/html&gt; . Create an HTML button that acts like a link . . Trending .",
           "url": "https://nighthawkcoders.github.io/music_mania/",
           "relUrl": "/",
           "date": ""
