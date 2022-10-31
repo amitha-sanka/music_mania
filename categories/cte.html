@@ -76,16 +76,7 @@ window.onload = wrap_img;
   </header>
 
   <div class="post-content">
-    ---
-title: Fetch of Backend Jokes
-layout: default
-description: An example of Frontend talking to Backend Python application serving jokes.  This example provides the ability to react to the Joke (haha or boohoo).
-permalink: /data/jokes
-categories: [C4.7]
-tags: [javascript, fetch, dom, getElementID, appendChild]
----
-
-<table>
+    <table>
     <tr>
         <td><img src="/music_mania//images/logo.png" height="60"  title="Data" alt=""></td>
         <td><a href="/music_mania/api/overview">Overview</a></td>
@@ -157,7 +148,7 @@ tags: [javascript, fetch, dom, getElementID, appendChild]
             
             // td for joke cell
             const joke = document.createElement("td");
-              joke.innerHTML = "Hello"//row.id + ". " + row.joke;  // add fetched data to innerHTML
+              joke.innerHTML = row.id + ". " + row.joke;  // add fetched data to innerHTML
 
             // td for haha cell with onclick actions
             const haha = document.createElement("td");
