@@ -29,7 +29,7 @@
   
       ,"page2": {
           "title": "Discover",
-          "content": "call backend function here | .",
+          "content": "call backend function here | . &lt;/input&gt; submit .",
           "url": "https://nighthawkcoders.github.io/music_mania/discover/",
           "relUrl": "/discover/",
           "date": ""
