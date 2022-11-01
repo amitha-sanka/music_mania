@@ -76,10 +76,22 @@ window.onload = wrap_img;
   </header>
 
   <div class="post-content">
-    <div class="row mt-4" style="margin-left: 2.5em; padding: 0 7em 2em 0;">
-    <div class="col-lg-8">
-        <h2>About our project!</h2>
-        <hr>
+    <style>
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+<div class="row">
+    <div class="column">
         <p>Hello! Welcome to our Music Mania Website. Our mission is 
             to help you explore your music taste. We have several 
             pages for you to find what music you like. We have a 
@@ -88,8 +100,8 @@ window.onload = wrap_img;
             users of our website like! Thanks for visiting us!
         </p>
     </div>
-    <div class="col-lg-4">
-        <img width="300px" src="https://cdn.discordapp.com/attachments/702253958688800840/1036380056764829767/music_mania_record_player_logo-3.png">
+    <div class="column">
+        <img width="500px" src="https://cdn.discordapp.com/attachments/702253958688800840/1036380056764829767/music_mania_record_player_logo-3.png">
     </div>
 </div>
   </div>
