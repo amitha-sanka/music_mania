@@ -17,8 +17,8 @@
 
   
       ,"page1": {
-          "title": "About Us",
-          "content": "Hello! Welcome to our Music Mania Website. Our mission is to help you explore your music taste. We have several pages for you to find what music you like. We have a discover page for you to find specific artist albums and songs. Additionally, see our trending page to see what users of our website like! Thanks for visiting us! .",
+          "title": "About",
+          "content": "Hello! Welcome to our Music Mania Website. Our mission is to help you explore your music taste. We will help you to find the artists you like. We have a discover page for you to find specific artist albums and songs. Additionally, see our trending page to see what users of our website like. . Add a pic of our team .",
           "url": "https://nighthawkcoders.github.io/music_mania/about/",
           "relUrl": "/about/",
           "date": ""
