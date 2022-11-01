@@ -50,5 +50,6 @@
         "WORKDIR",
         "WSGI",
         "Yeaton"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
