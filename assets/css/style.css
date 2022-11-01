@@ -439,11 +439,11 @@ a:hover { color: #493b2a !important; }
 
 pre, code { border-color: #f4c4c2; background-color: #F2BAB8; }
 
-.page-description { color: #E3D5CA; }
+.page-description { color: #27221b; }
 
-.post-meta { color: #E3D5CA; }
+.post-meta { color: #403932; }
 
-.post-content p, .post-content li { color: #E3D5CA; }
+.post-content p, .post-content li { color: #27221b; }
 
 .btn { background-color: #F2BAB8 !important; color: #493b2a !important; border-color: #f4c4c2 !important; }
 
@@ -451,7 +451,7 @@ pre, code { border-color: #f4c4c2; background-color: #F2BAB8; }
 
 table th { background-color: #F2BAB8; border-color: #f4c4c2; color: #493b2a; }
 
-table td { background-color: #F2BAB8; border-color: #f4c4c2; color: #E3D5CA; }
+table td { background-color: #F2BAB8; border-color: #f4c4c2; color: #27221b; }
 
 .flash { color: #F2BAB8 !important; filter: brightness(80%); }
 
@@ -459,7 +459,7 @@ canvas { filter: invert(100%); }
 
 .post-list > li > div { box-shadow: none !important; background-color: #F2BAB8; border: none !important; }
 
-li .post-meta-description { color: #E3D5CA !important; }
+li .post-meta-description { color: #27221b !important; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
