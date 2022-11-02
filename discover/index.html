@@ -97,132 +97,111 @@ window.onload = wrap_img;
 </body>
 
 
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {box-sizing: border-box}
-body {font-family: "Tahoma", Verdana, sans-serif;}
-/* Style the tab */
-.tab {
-  float: left;
-  border: 1px solid rgb(0, 0, 0);
-  background-color: #F2BAB8;
-  width: 30%;
-  height: 300px;
-}
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
+.accordion {
+  background-color: #ffebfb;
+  color: #000000;
+  cursor: pointer;
+  padding: 18px;
   width: 100%;
   border: none;
-  outline: none;
   text-align: left;
-  cursor: pointer;
-  font-size: 17px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
 }
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #fbe5f7;
+
+.active, .accordion:hover {
+  background-color: #ffd9f7; 
 }
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: rgb(236, 188, 188);
-}
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid rgb(0, 0, 0);
-  width: 70%;
-  border-left: none;
-  height: 300px;
+
+.panel {
+  padding: 0 18px;
   display: none;
-}
-/* Clear floats after the tab */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+  background-color: white;
+  overflow: hidden;
 }
 </style>
 </head>
 <body>
-<h2>Album</h2>
-<div class="tab">
-  <button class="tablinks" onmouseover="openCity(event, 'Taylor Swift')">Taylor Swift</button>
-  <button class="tablinks" onmouseover="openCity(event, 'Fearless')">Fearless</button>
-  <button class="tablinks" onmouseover="openCity(event, 'Speak Now')">Speak Now</button>
-  <button class="tablinks" onmouseover="openCity(event, 'Red')">Red</button>
-  <button class="tablinks" onmouseover="openCity(event, '1989')">1989</button>
-  <button class="tablinks" onmouseover="openCity(event, 'Reputation')">Reputation</button>
-  <button class="tablinks" onmouseover="openCity(event, 'Lover')">Lover</button>
-  <button class="tablinks" onmouseover="openCity(event, 'Folklore')">Folklore</button>
-  <button class="tablinks" onmouseover="openCity(event, 'Evermore')">Evermore</button>
-  <button class="tablinks" onmouseover="openCity(event, 'Midnights')">Midnights</button>
+
+<h2>Albums</h2>
+
+<button class="accordion">Taylor Swift</button>
+<div class="panel">
+  <p>Taylor Swift songs</p>
 </div>
 
-<div id="Taylor Swift" class="tabcontent">
-  <h3>Taylor Swift</h3>
-  <p>Taylor Swift songs.</p>
+<button class="accordion">Fearless</button>
+<div class="panel">
+  <p>Fearless songs</p>
 </div>
-<div id="Fearless" class="tabcontent">
-  <h3>Fearless</h3>
-  <p>Fearless songs.</p>
+
+<button class="accordion">Speak Now</button>
+<div class="panel">
+  <p>Speak Now songs</p>
 </div>
-<div id="Speak Now" class="tabcontent">
-  <h3>Speak Now</h3>
-  <p>Speak Now songs.</p>
-</div> 
-<div id="Red" class="tabcontent">
-  <h3>Red</h3>
-  <p>Red songs.</p>
+
+<button class="accordion">Red</button>
+<div class="panel">
+  <p>Red songs</p>
 </div>
-<div id="1989" class="1989">
-  <h3>1989</h3>
-  <p>1989 songs.</p>
+
+<button class="accordion">1989</button>
+<div class="panel">
+  <p>1989 songs</p>
 </div>
-<div id="Reputation" class="Reputation">
-  <h3>Reputation</h3>
-  <p>Reputation songs.</p>
+
+<button class="accordion">Reputation</button>
+<div class="panel">
+  <p>Reputation songs</p>
 </div>
-<div id="Lover" class="Lover">
-  <h3>Lover</h3>
+
+<button class="accordion">Lover</button>
+<div class="panel">
   <p>Lover songs</p>
 </div>
-<div id="Folklore" class="Folklore">
-  <h3>Folklore</h3>
+
+<button class="accordion">Folklore</button>
+<div class="panel">
   <p>Folklore songs</p>
 </div>
-<div id="Evermore" class="Evermore">
-  <h3>Evermore</h3>
+
+<button class="accordion">Evermore</button>
+<div class="panel">
   <p>Evermore songs</p>
 </div>
-<div id="Midnights" class="Midnights">
-  <h3>Midnights</h3>
+
+
+<button class="accordion">Midnights</button>
+<div class="panel">
   <p>Midnights songs</p>
 </div>
-<div class="clearfix"></div>
+
 <script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
 }
 </script>
+
 </body>
 </html>
+
   </div>
 
 </article>
