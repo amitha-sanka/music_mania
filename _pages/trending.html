@@ -31,12 +31,12 @@ tr:nth-child(even) {
 
 <script>
   function incrementValue()
-{
-    var value = parseInt(document.getElementById('number').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value++;
-    document.getElementById('number').value = value;
-}
+    {
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById('number').value = value;
+    }
 </script>
 </head>
 <table>
@@ -68,7 +68,12 @@ tr:nth-child(even) {
   <tr>
     <td><img src="https://cdn.discordapp.com/attachments/806618712056528906/1037656564380733511/IMG_2485.jpg" alt="speak now"></td>
     <td>Speak Now</td>
-    <td>UK</td>
+    <td>
+      <form>
+        <input type="text" id="number" value="0"/>
+        <input type="button" onclick="incrementValue()" value="Like" />
+     </form>
+    </td>
   </tr>
   <tr>
     <td><img src="https://cdn.discordapp.com/attachments/806618712056528906/1037656558861029446/IMG_7227.jpg" alt="red"></td>
@@ -148,11 +153,4 @@ tr:nth-child(even) {
   </tr>
 </table>
 </body>
-
-<div>
-  <form>
-    <input type="text" id="number" value="0"/>
-    <input type="button" onclick="incrementValue()" value="Increment Value" />
- </form>
-</div>
 </html>
