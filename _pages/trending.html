@@ -28,6 +28,16 @@ tr:nth-child(even) {
   background-color: #DDDDDD;
 }
 </style>
+
+<script>
+  function incrementValue()
+{
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number').value = value;
+}
+</script>
 </head>
 <table>
   <tr>
@@ -85,6 +95,19 @@ tr:nth-child(even) {
     <td>Canada</td>
   </tr>
   </tr>
+  <tr>
+    <form>
+      <input type="text" id="number" value="0"/>
+      <input type="button" onclick="incrementValue()" value="Increment Value" />
+   </form>
+  </tr>
 </table>
 </body>
+
+<div>
+  <form>
+    <input type="text" id="number" value="0"/>
+    <input type="button" onclick="incrementValue()" value="Increment Value" />
+ </form>
+</div>
 </html>
