@@ -102,13 +102,15 @@ tr:nth-child(even) {
 </style>
 
 <script>
-  function incrementValue()
+  function incrementValue(id)
     {
-        var value = parseInt(document.getElementById('number').value, 10);
-        value = isNaN(value) ? 0 : value;
-        value++;
-        document.getElementById('number').value = value;
+      console.log(document.getElementById(id).value);
+      let value = parseInt(document.getElementById(id).value, 10);
+      value = isNaN(value) ? 0 : value;
+      value++;
+      document.getElementById(id).value = value;
     }
+
 </script>
 </head>
 <table>
@@ -122,8 +124,8 @@ tr:nth-child(even) {
     <td>Taylor Swift</td>
     <td>
       <form>
-        <input type="text" id="number" value="0"/>
-        <input type="button" onclick="incrementValue()" value="Like" />
+        <input type="text" id="tswift" value="0"/>
+        <input type="button" onclick="incrementValue('tswift')" value="Like" />
      </form>
     </td>
   </tr>
@@ -132,8 +134,8 @@ tr:nth-child(even) {
     <td>Fearless</td>
     <td>
       <form>
-        <input type="text" id="number" value="0"/>
-        <input type="button" onclick="incrementValue()" value="Like" />
+        <input type="text" id="fearless" value="0"/>
+        <input type="button" onclick="incrementValue('fearless')" value="Like" />
      </form>
     </td>
   </tr>
@@ -142,8 +144,8 @@ tr:nth-child(even) {
     <td>Speak Now</td>
     <td>
       <form>
-        <input type="text" id="number" value="0"/>
-        <input type="button" onclick="incrementValue()" value="Like" />
+        <input type="text" id="speaknow" value="0"/>
+        <input type="button" onclick="incrementValue('speaknow')" value="Like" />
      </form>
     </td>
   </tr>
@@ -152,8 +154,8 @@ tr:nth-child(even) {
     <td>Red</td>
     <td>
       <form>
-        <input type="text" id="number" value="0"/>
-        <input type="button" onclick="incrementValue()" value="Like" />
+        <input type="text" id="red" value="0"/>
+        <input type="button" onclick="incrementValue('red')" value="Like" />
      </form>
     </td>
   </tr>
@@ -162,8 +164,8 @@ tr:nth-child(even) {
     <td>1989</td>
     <td>
       <form>
-        <input type="text" id="number" value="0"/>
-        <input type="button" onclick="incrementValue()" value="Like" />
+        <input type="text" id="1989" value="0"/>
+        <input type="button" onclick="incrementValue('1989')" value="Like" />
      </form>
     </td>
   </tr>
@@ -172,8 +174,8 @@ tr:nth-child(even) {
     <td>Reputation</td>
     <td>
       <form>
-        <input type="text" id="number" value="0"/>
-        <input type="button" onclick="incrementValue()" value="Like" />
+        <input type="text" id="reputation" value="0"/>
+        <input type="button" onclick="incrementValue('reputation')" value="Like" />
      </form>
     </td>
   </tr>
@@ -182,8 +184,8 @@ tr:nth-child(even) {
     <td>Lover</td>
     <td>
       <form>
-        <input type="text" id="number" value="0"/>
-        <input type="button" onclick="incrementValue()" value="Like" />
+        <input type="text" id="lover" value="0"/>
+        <input type="button" onclick="incrementValue('lover')" value="Like" />
      </form>
     </td>
     <tr>
@@ -191,8 +193,8 @@ tr:nth-child(even) {
     <td>Folklore</td>
     <td>
       <form>
-        <input type="text" id="number" value="0"/>
-        <input type="button" onclick="incrementValue()" value="Like" />
+        <input type="text" id="folklore" value="0"/>
+        <input type="button" onclick="incrementValue('folklore')" value="Like" />
      </form>
     </td>
   </tr>
@@ -201,8 +203,8 @@ tr:nth-child(even) {
     <td>Evermore</td>
     <td>
       <form>
-        <input type="text" id="number" value="0"/>
-        <input type="button" onclick="incrementValue()" value="Like" />
+        <input type="text" id="evermore" value="0"/>
+        <input type="button" onclick="incrementValue('evermore')" value="Like" />
      </form>
     </td>
   </tr>
@@ -211,8 +213,8 @@ tr:nth-child(even) {
     <td>Midnights</td>
     <td>
       <form>
-        <input type="text" id="number" value="0"/>
-        <input type="button" onclick="incrementValue()" value="Like" />
+        <input type="text" id="midnights" value="0"/>
+        <input type="button" onclick="incrementValue('midnights')" value="Like" />
      </form>
     </td>
   </tr>
